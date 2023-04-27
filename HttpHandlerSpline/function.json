@@ -1,0 +1,21 @@
+{
+  "scriptFile": "http_handler.py", 
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get",
+        "head"
+      ],
+      "route": "func/{*parem}"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "$return"
+    }
+  ]
+}

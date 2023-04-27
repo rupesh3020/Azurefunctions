@@ -1,0 +1,13 @@
+{
+    "scriptFile": "generate_lineage.py",
+    "disabled": false,
+    "bindings": [
+        {
+            "name": "myblob",
+            "type": "blobTrigger",
+            "direction": "in",
+            "path": "pathtolandingzone/{path}", 
+            "connection": "layerconnection"
+        }
+    ]
+}
