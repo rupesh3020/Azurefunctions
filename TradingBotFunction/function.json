@@ -1,0 +1,25 @@
+{
+  "scriptFile": "trading_bot.py",
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get",
+        "post",
+        "put",
+        "patch",
+        "delete",
+        "options"
+      ],
+      "route": "trading/{*path}"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "$return"
+    }
+  ]
+}
