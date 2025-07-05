@@ -16,3 +16,6 @@ mypy==0.910
 interrogate==1.5.0
 pyodbc
 pyapacheatlas
+uvicorn[standard]
+fastapi
+
